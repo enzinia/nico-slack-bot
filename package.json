@@ -23,7 +23,8 @@
   "homepage": "https://github.com/enzinia/nico-slack-bot#readme",
   "dependencies": {
     "@google-cloud/functions-framework": "^1.5.1",
-    "@google-cloud/storage": "^4.7.0"
+    "@google-cloud/storage": "^4.7.0",
+    "@slack/webhook": "^5.0.3"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
