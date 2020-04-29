@@ -1,0 +1,27 @@
+{
+  "name": "nico-slack-bot",
+  "version": "1.0.0",
+  "description": "Google Functions code to back up Slack Nico bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzinia/nico-slack-bot.git"
+  },
+  "keywords": [
+    "google-functions",
+    "slack-bot"
+  ],
+  "author": "Vladimir Kukovskii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enzinia/nico-slack-bot/issues"
+  },
+  "homepage": "https://github.com/enzinia/nico-slack-bot#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.5.1"
+  }
+}
