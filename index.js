@@ -1,3 +1,14 @@
-exports.start = (req, res) => {
-  res.send('Hello, World');
+const GCS = require('./gcs');
+
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
+const storage = new GCS();
+
+exports.start = async (req, res) => {
+  const file = await storage.getRandomFile();
+
+  res.send(file);
 };
+
