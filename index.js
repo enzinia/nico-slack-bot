@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production') {
 const storage = new GCS();
 const slackWebhook = new SlackWebhook();
 
-exports.start = async (req, res) => {
+exports.sendImageToSlack = async (req, res) => {
   const file = await storage.getRandomFile();
 
   await slackWebhook.sendImage(file);
