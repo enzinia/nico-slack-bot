@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "functions-framework --target=start",
-    "deploy": "gcloud functions deploy sendImageToSlack --trigger-http --region=asia-northeast1 --runtime=nodejs10"
+    "deploy": "gcloud functions deploy sendImageToSlack --trigger-http --region=asia-northeast1 --runtime=nodejs14"
   },
   "repository": {
     "type": "git",
