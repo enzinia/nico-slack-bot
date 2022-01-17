@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "functions-framework --target=start",
-    "deploy": "gcloud functions deploy sendImageToSlack --trigger-http --region=asia-northeast1 --runtime=nodejs14"
+    "deploy": "gcloud functions deploy sendImageToSlack --trigger-http --region=asia-northeast1 --runtime=nodejs16"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/enzinia/nico-slack-bot#readme",
   "dependencies": {
-    "@google-cloud/functions-framework": "^1.7.1",
-    "@google-cloud/storage": "^5.7.4",
-    "@slack/webhook": "^6.0.0"
+    "@google-cloud/functions-framework": "^2.1.0",
+    "@google-cloud/storage": "^5.17.0",
+    "@slack/webhook": "^6.1.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^14.1.0"
   }
 }
